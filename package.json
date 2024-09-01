@@ -1,6 +1,6 @@
 {
-  "name": "CheemsBot-MD",
-  "version": "15.0.0",
+  "name": "GLOBAL-MD",
+  "version": "2.0.0",
   "description": "Bot WhatsApp Using Lib Baileys Multi Device",
   "main": "start.js",
   "type": "commonjs",
@@ -8,9 +8,9 @@
     "start": "node start.js"
   },
   "keywords": [
-    "Whatsapp Bot By DGXeon"
+    "Whatsapp Bot By GlobalTechInfo"
   ],
-  "author": "DGXeon",
+  "author": "GlobalTechInfo",
   "license": "MIT",
   "dependencies": {
     "@whiskeysockets/baileys" : "^6.7.5",

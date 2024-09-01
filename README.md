@@ -1,3 +1,6 @@
+# FIXED & UPDATED 🥰
+
+
 <p align="center">
 <a href="https://github.com/GlobalTechInfo"><img title="Author" src="https://telegra.ph/file/78899ccfed9d3ec2fee61.jpg?style=for-the-badge&logo=github"></a>
 
@@ -19,85 +22,72 @@ GLOBAL-MD is a Cool Multi-Device WhatsApp bot developed by [GlobalTechInfo](http
 <p align='center'>
 </p>
 
-
-<p align="center">
-<a href="https://youtube.com/@GlobalTechInfo"><img src="https://img.shields.io/badge/YouTube-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://youtube.com/@GlobalTechInfo" /><br>
-<a href="https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07"><img src="https://img.shields.io/badge/WhatsApp Channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&link=https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07" /><br>
-<a href="https://t.me/GlobalTechInc"><img src="https://img.shields.io/badge/Telegram-blue?style=for-the-badge&logo=telegram&logoColor=white" />
-<p>
-  
-####
-
-*GLOBAL-MD*  An Advanced Multi Device whatsapp bot Having More than 700+ Features Based on *CHEEMS V15.5*
--------
-
 ## 🛠️ `Installation Method`
   
-#### Fork The Repo
+### Fork The Repo
 
 <a href="https://github.com/GlobalTechInfo/GLOBAL-MD/fork"><img title="GLOBAL-MD" src="https://img.shields.io/badge/FORK-GLOBAL MD-h?color=red&style=for-the-badge&logo=stackshare"></a>
 
 ## `Generate Pair Code For Session`
 
-<a href='https://globaltechbot.onrender.com/' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/PAIRING CODE-1-magenta?style=for-the-badge&logo=opencv&logoColor=white'/></a>
+### Watch Turtorial
+<a href="https://youtu.be/lsl636dr3yk"><img src="https://img.shields.io/badge/YouTube-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://youtu.be/lsl636dr3yk" /><br>
 
 
-<a href='https://replit.com/@DGXeon/Xeon-PairCode' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/PAIRING CODE-2-magenta?style=for-the-badge&logo=opencv&logoColor=white'/></a>
+<a href='https://web-vstsf.onrender.com' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/PAIRING CODE-1-magenta?style=for-the-badge&logo=opencv&logoColor=white'/></a>
+
+## ⬇️USING GIFTED PAIRING BECAUSE MINE NOT WORKING
+
+<a href='https://replit.com/@mouriceonyango0/Giftedv5-PairCode' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/PAIRING CODE-2-magenta?style=for-the-badge&logo=opencv&logoColor=white'/></a>
 
 #### NOW UPLOAD YOUR CREDS.JSON FILE INSIDE SESSION FOLDER OF YOUR FORK
 
-# ⚙️ `Deployments`
+# 🛟 `Deployments`
 
-## BOT HOSTING PANEL
+## Watch Tutorial For Hosting Panel
+<a href="https://youtu.be/WpfdClSeQyg"><img src="https://img.shields.io/badge/YouTube-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://youtu.be/WpfdClSeQyg" /><br>
+
+### BOT HOSTING PANEL
 <a href='https://bot-hosting.net/?aff=1097457675723341836' target="_blank"><img alt='Panel Link'
 src='https://img.shields.io/badge/HOSTING%20PANEL-blue?style=for-the-badge&logo=Cloudflare&logoColor=white'/></a>
 
 
-## DEPLOY TO HEROKU 
+### DEPLOY TO HEROKU 
 
 <a href='https://id.heroku.com/login' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-HEROKU-rebeccapurple?style=for-the-badge&logo=heroku&logoColor=white'/></a>
 
-## DEPLOY TO REPLIT
+### DEPLOY TO REPLIT
 
    <a href='https://repl.it/github/GlobalTechInfo/GLOBAL-MD' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-REPLIT-orange?style=for-the-badge&logo=replit&logoColor=white'/></a>
 
 
-## DEPLOY TO CODESPACE
+### DEPLOY TO CODESPACE
 
 <a href='https://github.com/codespaces/new' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/CODESPACE-h?color=navy&style=for-the-badge&logo=visualstudiocode'/></a></p>
 
-## DEPLOY TO RAILWAY
+### DEPLOY TO RAILWAY
 
 <a href='https://railway.app/new' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/RAILWAY-h?color=black&style=for-the-badge&logo=railway'/></a></p>
 
-## DEPLOY TO RENDER
+### DEPLOY TO RENDER
 
 <a href='https://dashboard.render.com' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/RENDER-h?color=maroon&style=for-the-badge&logo=render'/></a></p>
 
-## DEPLOY TO SCALINGO
+### DEPLOY TO SCALINGO
 
 <a href='https://auth.scalingo.com/users/sign_in' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/SCALINGO-h?color=olive&style=for-the-badge&logo=scalingo'/></a></p>
 
-## DEPLOY TO KOYEB
+### DEPLOY TO KOYEB
 
 <a href='https://app.koyeb.com/auth/signin' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-KOYEB-blue?style=for-the-badge&logo=koyeb&logoColor=white'/></a>
 
-## 🏷️`OWNER` 
-<a href="https://github.com/GlobalTechInfo"><img src="https://github.com/GlobalTechInfo.png" alt="Qasim Ali"/></a>
-  
-**GLOBAL-MD** - By `GlobalTechInfo`
-<br>
-`Development , Maintainence , Bot Updates`
-
-
-[![JOIN WHATSAPP CHANNEL](https://raw.githubusercontent.com/Neeraj-x0/Neeraj-x0/main/photos/suddidina-join-whatsapp.png)](https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07))
+[![JOIN WHATSAPP CHANNEL](https://raw.githubusercontent.com/Neeraj-x0/Neeraj-x0/main/photos/suddidina-join-whatsapp.png)](https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK)
 
 
 
-## `For Termux/Ubuntu`
+### `For Termux/Ubuntu`
 ```bash
 apt update && apt upgrade -y
-pkg update && pkg upgrade -y
 pkg install proot-distro
 proot-distro install ubuntu
 proot-distro login ubuntu

@@ -1852,9 +1852,9 @@ break
         `Contact Developer On WhatsApp`, // Body message
         botname, // Footer message
         'Visit', // Button display text
-        'https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07', // Command (URL in this case)
+        'https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK', // Command (URL in this case)
         'cta_url', // Button type
-        'https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07' // URL (used in image generation)
+        'https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK' // URL (used in image generation)
     ], 
 ];
 
@@ -15326,7 +15326,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 				let teks = `⬣ *LIST GROUP CHAT*\n\nTotal Group : ${anu.length} Group\n\n`
 				for (let i of anu) {
 					let metadata = await XeonBotInc.groupMetadata(i)
-					teks += `${setv} *Name :* ${metadata.subject}\n${setv} *Admin :* ${metadata.owner ? `@${metadata.owner.split('@')[0]}` : '-' }\n${setv} *ID :* ${metadata.id}\n${setv} *Made :* ${moment(metadata.creation * 1000).tz('Asia/Kolkata').format('DD/MM/YYYY HH:mm:ss')}\n${setv} *Member :* ${metadata.participants.length}\n\n=====================\n\n`
+					teks += `${setv} *Name :* ${metadata.subject}\n${setv} *Admin :* ${metadata.owner ? `@${metadata.owner.split('@')[0]}` : '-' }\n${setv} *ID :* ${metadata.id}\n${setv} *Made :* ${moment(metadata.creation * 1000).tz('Asia/Karachi').format('DD/MM/YYYY HH:mm:ss')}\n${setv} *Member :* ${metadata.participants.length}\n\n=====================\n\n`
 				}
 				XeonBotInc.sendTextMentions(m.chat, teks, m)
 			}
@@ -16789,25 +16789,12 @@ break
             const a = db.users[sender]
             const me = m.sender
 			const xmenu_oh = `
-╭──❍「 *GREETING* 」❍
+╭──⊡「 *GREETING* 」⊡
 ├${setv} *Hi 👋*
 ├${setv} *${m.pushName}* 
 ├${setv} *${xeonytimewisher} 🥰* 
-╰─┬────❍ ${readmore}
-╭─┴─❍「 *BOT INFO* 」❍
-├${setv} *Speed* : ${latensie.toFixed(4)} miliseconds
-├${setv} *Runtime* : ${runtime(process.uptime())}
-├${setv} *Host* : ${os.hostname()}
-├${setv} *Platform* : ${os.platform()}
-├${setv} *Bot Name* : ${global.botname}
-├${setv} *Owner* : @${ownernumber[0].split('@')[0]}
-├${setv} *Mode* : ${XeonBotInc.public ? 'Public' : 'Self'}
-├${setv} *Total User* : ${Object.keys(global.db.users).length} User
-├${setv} *Total Hit* : ${global.db.settings[botNumber].totalhit} Hit
-├${setv} *Total Chat* : ${Object.keys(global.db.groups).length} Chat/Gc
-├${setv} *Prefix* :「 ${xprefix} 」
-╰─┬────❍
-╭─┴❍「 *MENU* 」❍
+╰─┬────⊡ ${readmore}
+╭─┴⊡「 *MENU* 」⊡
 │${setv} ${prefix}allmenu
 │${setv} ${prefix}searchmenu
 │${setv} ${prefix}downloadmenu
@@ -16829,7 +16816,7 @@ break
 │${setv} ${prefix}stalkermenu
 │${setv} ${prefix}bugmenu
 │${setv} ${prefix}othermenu
-╰──────❍`
+╰──────⊡`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -16997,12 +16984,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },              
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
            ],
           })
         })
@@ -17051,12 +17034,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },              
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
                                   ],
                 }),
                 contextInfo: {
@@ -17207,7 +17186,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -17234,17 +17213,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'allmenu': {
 let xmenu_oh = `
-╭──❍「 *GREETING* 」❍
+╭──⊡「 *GREETING* 」⊡
 ├${setv} *Hi 👋*
 ├${setv} *${m.pushName}* 
 ├${setv} *${xeonytimewisher} 🥰* 
-╰─┬────❍ ${readmore}
-╭─┴❍「 *GUIDE* 」❍
+╰─┬────⊡ ${readmore}
+╭─┴⊡「 *GUIDE* 」⊡
 ├${setv} *🅞 = For Owner* 
 ├${setv} *🅕 = For Free User*
 ├${setv} *🅟 = For Premium User*
-╰─┬────❍
-╭─┴❍「 *OWNER MENU* 」❍
+╰─┬────⊡
+╭─┴⊡「 *OWNER MENU* 」⊡
 │${setv} ${prefix}addbadword 🅞
 │${setv} ${prefix}delbadword 🅞
 │${setv} ${prefix}autoread 🅞
@@ -17323,8 +17302,8 @@ let xmenu_oh = `
 │${setv} $ 🅞
 │${setv} > 🅞
 │${setv} < 🅞
-╰─┬────❍
-╭─┴❍「 *GROUP MENU* 」❍
+╰─┬────⊡
+╭─┴⊡「 *GROUP MENU* 」⊡
 │${setv} ${prefix}antibot 🅖
 │${setv} ${prefix}antiviewonce 🅖
 │${setv} ${prefix}readviewonce 🅖
@@ -17382,8 +17361,8 @@ let xmenu_oh = `
 │${setv} ${prefix}nsfw 🅖
 │${setv} ${prefix}react 🅖
 │${setv} ${prefix}getjoinrequest 🅖
-╰─┬────❍
-╭─┴❍「 *SEARCH MENU* 」❍
+╰─┬────⊡
+╭─┴⊡「 *SEARCH MENU* 」⊡
 │${setv} ${prefix}google 🅕
 │${setv} ${prefix}wikipedia 🅕
 │${setv} ${prefix}ytsearch 🅕
@@ -17396,8 +17375,8 @@ let xmenu_oh = `
 │${setv} ${prefix}friend 🅕
 │${setv} ${prefix}lyrics 🅕
 │${setv} ${prefix}pixiv 🅕
-╰─┬────❍
-╭─┴❍「 *DOWNLOADS* 」❍
+╰─┬────⊡
+╭─┴⊡「 *DOWNLOADS* 」⊡
 │${setv} ${prefix}xnxxdl 🅕
 │${setv} ${prefix}xvideodl 🅕
 │${setv} ${prefix}itunes 🅕
@@ -17424,8 +17403,8 @@ let xmenu_oh = `
 │${setv} ${prefix}pinterest 🅕
 │${setv} ${prefix}ringtone 🅕
 │${setv} ${prefix}autodownload 🅞
-╰─┬────❍
-╭─┴❍「 *TOOL MENU* 」❍
+╰─┬────⊡
+╭─┴⊡「 *TOOL MENU* 」⊡
 │${setv} ${prefix}obfuscate 🅕
 │${setv} ${prefix}styletext 🅕
 │${setv} ${prefix}fliptext 🅕
@@ -17469,8 +17448,8 @@ let xmenu_oh = `
 │${setv} ${prefix}get 🅕
 │${setv} ${prefix}tourl 🅕
 │${setv} ${prefix}write 🅕
-╰─┬────❍
-╭─┴❍「 *LIST MENU* 」❍
+╰─┬────⊡
+╭─┴⊡「 *LIST MENU* 」⊡
 │${setv} ${prefix}listprem 🅕
 │${setv} ${prefix}listowner 🅕
 │${setv} ${prefix}liststicker 🅕
@@ -17483,8 +17462,8 @@ let xmenu_oh = `
 │${setv} ${prefix}listbadword 🅕
 │${setv} ${prefix}listpc 🅕
 │${setv} ${prefix}listgc 🅕
-╰─┬────❍
-╭─┴❍「 *RANDOM PHOTO* 」❍
+╰─┬────⊡
+╭─┴⊡「 *RANDOM PHOTO* 」⊡
 │${setv} ${prefix}aesthetic 🅕
 │${setv} ${prefix}coffee 🅕
 │${setv} ${prefix}wikimedia 🅕
@@ -17542,8 +17521,8 @@ let xmenu_oh = `
 │${setv} ${prefix}malay 🅕
 │${setv} ${prefix}thai 🅕
 │${setv} ${prefix}vietnamese 🅕
-╰─┬────❍
-╭─┴❍「 *RANDOM VIDEO* 」❍
+╰─┬────⊡
+╭─┴⊡「 *RANDOM VIDEO* 」⊡
 │${setv} ${prefix}tiktokgirl 🅕
 │${setv} ${prefix}tiktoknukthy 🅕
 │${setv} ${prefix}tiktokkayes 🅕
@@ -17552,14 +17531,14 @@ let xmenu_oh = `
 │${setv} ${prefix}tiktokghea 🅕
 │${setv} ${prefix}tiktoksantuy 🅕
 │${setv} ${prefix}tiktokbocil 🅕
-╰─┬────❍
-╭─┴❍「 *STALKER MENU* 」❍
+╰─┬────⊡
+╭─┴⊡「 *STALKER MENU* 」⊡
 │${setv} ${prefix}tiktokstalk 🅕
 │${setv} ${prefix}mlstalk 🅕
 │${setv} ${prefix}npmstalk 🅕
 │${setv} ${prefix}ghstalk 🅕
-╰─┬────❍
-╭─┴❍「 *OPEN AI* 」❍
+╰─┬────⊡
+╭─┴⊡「 *OPEN AI* 」⊡
 │${setv} ${prefix}blackboxai 🅕
 │${setv} ${prefix}travel-assistant 🅕
 │${setv} ${prefix}guru-ai 🅕
@@ -17579,8 +17558,8 @@ let xmenu_oh = `
 │${setv} ${prefix}dalle 🅕
 │${setv} ${prefix}ai 🅕
 │${setv} ${prefix}remini 🅕
-╰─┬────❍
-╭─┴❍「 *GAME MENU* 」❍
+╰─┬────⊡
+╭─┴⊡「 *GAME MENU* 」⊡
 │${setv} ${prefix}truth 🅕
 │${setv} ${prefix}dare 🅕
 │${setv} ${prefix}suit 🅕
@@ -17595,8 +17574,8 @@ let xmenu_oh = `
 │${setv} ${prefix} claim 🅕
 │${setv} ${prefix} tmoney 🅕
 │${setv} ${prefix} tflimit 🅕
-╰─┬────❍
-╭─┴❍「 *FUN MENU* 」❍
+╰─┬────⊡
+╭─┴⊡「 *FUN MENU* 」⊡
 │${setv} ${prefix}define 🅕
 │${setv} ${prefix}readmore 🅕
 │${setv} ${prefix}fact 🅕
@@ -17661,8 +17640,8 @@ let xmenu_oh = `
 │${setv} ${prefix}feed 🅕
 │${setv} ${prefix}checkme 🅕
 │${setv} ${prefix}sound1 - sound161 🅕
-╰─┬────❍
-╭─┴❍「 *STICKERS* 」❍
+╰─┬────⊡
+╭─┴⊡「 *STICKERS* 」⊡
 │${setv} ${prefix}goose 🅕
 │${setv} ${prefix}woof 🅕
 │${setv} ${prefix}8ball 🅕
@@ -17670,8 +17649,8 @@ let xmenu_oh = `
 │${setv} ${prefix}meow 🅕
 │${setv} ${prefix}gura 🅕
 │${setv} ${prefix}telestick 🅕
-╰─┬────❍
-╭─┴❍「 *ANIME MENU* 」❍
+╰─┬────⊡
+╭─┴⊡「 *ANIME MENU* 」⊡
 │${setv} ${prefix}stickhandhold 🅕
 │${setv} ${prefix}stickshinobu 🅕
 │${setv} ${prefix}stickcuddle 🅕
@@ -17807,8 +17786,8 @@ let xmenu_oh = `
 │${setv} ${prefix}shinobu 🅕
 │${setv} ${prefix}fox_girl 🅕
 │${setv} ${prefix}gecg 🅕
-╰─┬────❍
-╭─┴❍「 *ANIME NSFW* 」❍
+╰─┬────⊡
+╭─┴⊡「 *ANIME NSFW* 」⊡
 │${setv} ${prefix}hentai 🅕
 │${setv} ${prefix}gifblowjob 🅕
 │${setv} ${prefix}hentaivid 🅕
@@ -17823,8 +17802,8 @@ let xmenu_oh = `
 │${setv} ${prefix}pussy 🅕
 │${setv} ${prefix}yuri 🅕
 │${setv} ${prefix}zettai 🅕
-╰─┬────❍
-╭─┴❍「 *DATABASE* 」❍
+╰─┬────⊡
+╭─┴⊡「 *DATABASE* 」⊡
 │${setv} ${prefix}setcmd 🅞
 │${setv} ${prefix}delcmd 🅞
 │${setv} ${prefix}listcmd 🅕
@@ -17833,20 +17812,20 @@ let xmenu_oh = `
 │${setv} ${prefix}delmsg 🅞
 │${setv} ${prefix}getmsg 🅕
 │${setv} ${prefix}listmsg 🅕
-╰─┬────❍
-╭─┴❍「 *STORE MENU* 」❍
+╰─┬────⊡
+╭─┴⊡「 *STORE MENU* 」⊡
 │${setv} ${prefix}list 🅕
 │${setv} ${prefix}store 🅕
 │${setv} ${prefix}shop 🅕
 │${setv} ${prefix}addlist 🅞
 │${setv} ${prefix}dellist 🅞
-╰─┬────❍
-╭─┴❍「 *RELIGIONS* 」❍
+╰─┬────⊡
+╭─┴⊡「 *RELIGIONS* 」⊡
 │${setv} ${prefix}bible 🅕
 │${setv} ${prefix}quran 🅕
 │${setv} ${prefix}gita 🅕
-╰─┬────❍
-╭─┴❍「 *BUG & WAR* 」❍
+╰─┬────⊡
+╭─┴⊡「 *BUG & WAR* 」⊡
 │${setv} ${prefix}xandroid 🅞
 │${setv} ${prefix}xandroid2 🅞
 │${setv} ${prefix}xios 🅞
@@ -17857,8 +17836,8 @@ let xmenu_oh = `
 │${setv} ${prefix}ioskill 🅞
 │${setv} ${prefix}onekill 🅞
 │${setv} ${prefix}xgcmem 🅞
-╰─┬────❍
-╭─┴❍「 *OTHER MENU* 」❍
+╰─┬────⊡
+╭─┴⊡「 *OTHER MENU* 」⊡
 │${setv} ${prefix}update 🅕
 │${setv} ${prefix}ping 🅕
 │${setv} ${prefix}menu 🅕
@@ -17875,7 +17854,7 @@ let xmenu_oh = `
 │${setv} ${prefix}q 🅕
 │${setv} ${prefix}inspect 🅕
 │${setv} ${prefix}tagme 🅕
-╰──────❍`
+╰──────⊡`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -18044,12 +18023,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
            ],
           })
         })
@@ -18098,12 +18073,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },              
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
                                   ],
                 }),
                 contextInfo: {
@@ -18254,7 +18225,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -18281,17 +18252,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'ownermenu': {
 let xmenu_oh = `
-╭──❍「 *GREETING* 」❍
+╭──⊡「 *GREETING* 」⊡
 ├${setv} *Hi 👋*
 ├${setv} *${m.pushName}* 
 ├${setv} *${xeonytimewisher} 🥰* 
-╰─┬────❍ ${readmore}
-╭─┴❍「 *GUIDE* 」❍
+╰─┬────⊡ ${readmore}
+╭─┴⊡「 *GUIDE* 」⊡
 ├${setv} *🅞 = For Owner* 
 ├${setv} *🅕 = For Free User*
 ├${setv} *🅟 = For Premium User*
-╰─┬────❍
-╭─┴❍「 *OWNER MENU* 」❍
+╰─┬────⊡
+╭─┴⊡「 *OWNER MENU* 」⊡
 │${setv} ${prefix}addbadword 🅞
 │${setv} ${prefix}delbadword 🅞
 │${setv} ${prefix}autoread 🅞
@@ -18370,7 +18341,7 @@ let xmenu_oh = `
 │${setv} $ 🅞
 │${setv} > 🅞
 │${setv} < 🅞
-╰──────❍`
+╰──────⊡`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -18539,12 +18510,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
            ],
           })
         })
@@ -18593,12 +18560,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },              
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
                                   ],
                 }),
                 contextInfo: {
@@ -18749,7 +18712,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -18776,18 +18739,18 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'groupmenu': {
 let xmenu_oh = `
-╭──❍「 *GREETING* 」❍
+╭──⊡「 *GREETING* 」⊡
 ├${setv} *Hi 👋*
 ├${setv} *${m.pushName}* 
 ├${setv} *${xeonytimewisher} 🥰* 
-╰─┬────❍ ${readmore}
-╭─┴❍「 *GUIDE* 」❍
+╰─┬────⊡ ${readmore}
+╭─┴⊡「 *GUIDE* 」⊡
 ├${setv} *🅞 = For Owner* 
 ├${setv} *🅕 = For Free User*
 ├${setv} *🅟 = For Premium 
 User*
-╰─┬────❍
-╭─┴❍「 *GROUP MENU* 」❍
+╰─┬────⊡
+╭─┴⊡「 *GROUP MENU* 」⊡
 │${setv} ${prefix}antibot 🅖
 │${setv} ${prefix}antiviewonce 🅖
 │${setv} ${prefix}readviewonce 🅖
@@ -18845,7 +18808,7 @@ User*
 │${setv} ${prefix}nsfw 🅖
 │${setv} ${prefix}react 🅖
 │${setv} ${prefix}getjoinrequest 🅖
-╰──────❍`
+╰──────⊡`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -19014,12 +18977,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
            ],
           })
         })
@@ -19068,12 +19027,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },              
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
                                   ],
                 }),
                 contextInfo: {
@@ -19224,7 +19179,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
 	     }
            ],
           }),
@@ -19251,17 +19206,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'searchmenu': {
 let xmenu_oh = `
-╭──❍「 *GREETING* 」❍
+╭──⊡「 *GREETING* 」⊡
 ├${setv} *Hi 👋*
 ├${setv} *${m.pushName}* 
 ├${setv} *${xeonytimewisher} 🥰* 
-╰─┬────❍ ${readmore}
-╭─┴❍「 *GUIDE* 」❍
+╰─┬────⊡ ${readmore}
+╭─┴⊡「 *GUIDE* 」⊡
 ├${setv} *🅞 = For Owner* 
 ├${setv} *🅕 = For Free User*
 ├${setv} *🅟 = For Premium User*
-╰─┬────❍
-╭─┴❍「 *SEARCH MENU* 」❍
+╰─┬────⊡
+╭─┴⊡「 *SEARCH MENU* 」⊡
 │${setv} ${prefix}google 🅕
 │${setv} ${prefix}wikipedia 🅕
 │${setv} ${prefix}ytsearch 🅕
@@ -19274,7 +19229,7 @@ let xmenu_oh = `
 │${setv} ${prefix}friend 🅕
 │${setv} ${prefix}lyrics 🅕
 │${setv} ${prefix}pixiv 🅕
-╰──────❍`
+╰──────⊡`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -19443,12 +19398,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
            ],
           })
         })
@@ -19497,12 +19448,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },              
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
                                   ],
                 }),
                 contextInfo: {
@@ -19653,7 +19600,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -19680,17 +19627,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'downloadmenu': {
 let xmenu_oh = `
-╭──❍「 *GREETING* 」❍
+╭──⊡「 *GREETING* 」⊡
 ├${setv} *Hi 👋*
 ├${setv} *${m.pushName}* 
 ├${setv} *${xeonytimewisher} 🥰* 
-╰─┬────❍ ${readmore}
-╭─┴❍「 *GUIDE* 」❍
+╰─┬────⊡ ${readmore}
+╭─┴⊡「 *GUIDE* 」⊡
 ├${setv} *🅞 = For Owner* 
 ├${setv} *🅕 = For Free User*
 ├${setv} *🅟 = For Premium User*
-╰─┬────❍
-╭─┴❍「 *DOWNLOADS* 」❍
+╰─┬────⊡
+╭─┴⊡「 *DOWNLOADS* 」⊡
 │${setv} ${prefix}xnxxdl 🅕
 │${setv} ${prefix}xvideodl 🅕
 │${setv} ${prefix}itunes 🅕
@@ -19717,7 +19664,7 @@ let xmenu_oh = `
 │${setv} ${prefix}pinterest 🅕
 │${setv} ${prefix}ringtone 🅕
 │${setv} ${prefix}autodownload 🅞
-╰──────❍`
+╰──────⊡`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -19886,12 +19833,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
            ],
           })
         })
@@ -19940,12 +19883,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },              
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
                                   ],
                 }),
                 contextInfo: {
@@ -20096,7 +20035,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -20123,17 +20062,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'toolmenu': {
 let xmenu_oh = `
-╭──❍「 *GREETING* 」❍
+╭──⊡「 *GREETING* 」⊡
 ├${setv} *Hi 👋*
 ├${setv} *${m.pushName}* 
 ├${setv} *${xeonytimewisher} 🥰* 
-╰─┬────❍ ${readmore}
-╭─┴❍「 *GUIDE* 」❍
+╰─┬────⊡ ${readmore}
+╭─┴⊡「 *GUIDE* 」⊡
 ├${setv} *🅞 = For Owner* 
 ├${setv} *🅕 = For Free User*
 ├${setv} *🅟 = For Premium User*
-╰─┬────❍
-╭─┴❍「 *TOOL MENU* 」❍
+╰─┬────⊡
+╭─┴⊡「 *TOOL MENU* 」⊡
 │${setv} ${prefix}obfuscate 🅕
 │${setv} ${prefix}styletext 🅕
 │${setv} ${prefix}fliptext 🅕
@@ -20177,7 +20116,7 @@ let xmenu_oh = `
 │${setv} ${prefix}get 🅕
 │${setv} ${prefix}tourl 🅕
 │${setv} ${prefix}write 🅕
-╰──────❍`
+╰──────⊡`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -20346,12 +20285,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
            ],
           })
         })
@@ -20400,7 +20335,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
               },              
               {
   "name": "quick_reply",
@@ -20556,7 +20491,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -20583,17 +20518,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'listmenu': {
 let xmenu_oh = `
-╭──❍「 *GREETING* 」❍
+╭──⊡「 *GREETING* 」⊡
 ├${setv} *Hi 👋*
 ├${setv} *${m.pushName}* 
 ├${setv} *${xeonytimewisher} 🥰* 
-╰─┬────❍ ${readmore}
-╭─┴❍「 *GUIDE* 」❍
+╰─┬────⊡ ${readmore}
+╭─┴⊡「 *GUIDE* 」⊡
 ├${setv} *🅞 = For Owner* 
 ├${setv} *🅕 = For Free User*
 ├${setv} *🅟 = For Premium User*
-╰─┬────❍
-╭─┴❍「 *LIST MENU* 」❍
+╰─┬────⊡
+╭─┴⊡「 *LIST MENU* 」⊡
 │${setv} ${prefix}listprem 🅕
 │${setv} ${prefix}listowner 🅕
 │${setv} ${prefix}liststicker 🅕
@@ -20606,7 +20541,7 @@ let xmenu_oh = `
 │${setv} ${prefix}listbadword 🅕
 │${setv} ${prefix}listpc 🅕
 │${setv} ${prefix}listgc 🅕
-╰──────❍`
+╰──────⊡`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -20775,12 +20710,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
            ],
           })
         })
@@ -20829,12 +20760,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },              
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
                                   ],
                 }),
                 contextInfo: {
@@ -20985,7 +20912,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -21012,17 +20939,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'randomphotomenu': {
 let xmenu_oh = `
-╭──❍「 *GREETING* 」❍
+╭──⊡「 *GREETING* 」⊡
 ├${setv} *Hi 👋*
 ├${setv} *${m.pushName}* 
 ├${setv} *${xeonytimewisher} 🥰* 
-╰─┬────❍ ${readmore}
-╭─┴❍「 *GUIDE* 」❍
+╰─┬────⊡ ${readmore}
+╭─┴⊡「 *GUIDE* 」⊡
 ├${setv} *🅞 = For Owner* 
 ├${setv} *🅕 = For Free User*
 ├${setv} *🅟 = For Premium User*
-╰─┬────❍
-╭─┴❍「 *RANDOM PHOTO* 」❍
+╰─┬────⊡
+╭─┴⊡「 *RANDOM PHOTO* 」⊡
 │${setv} ${prefix}aesthetic 🅕
 │${setv} ${prefix}coffee 🅕
 │${setv} ${prefix}wikimedia 🅕
@@ -21080,7 +21007,7 @@ let xmenu_oh = `
 │${setv} ${prefix}malay 🅕
 │${setv} ${prefix}thai 🅕
 │${setv} ${prefix}vietnamese 🅕
-╰──────❍`
+╰──────⊡`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -21249,12 +21176,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
            ],
           })
         })
@@ -21303,12 +21226,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
                                   ],
                 }),
                 contextInfo: {
@@ -21459,7 +21378,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -21486,17 +21405,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'randomvideomenu': {
 let xmenu_oh = `
-╭──❍「 *GREETING* 」❍
+╭──⊡「 *GREETING* 」⊡
 ├${setv} *Hi 👋*
 ├${setv} *${m.pushName}* 
 ├${setv} *${xeonytimewisher} 🥰* 
-╰─┬────❍ ${readmore}
-╭─┴❍「 *GUIDE* 」❍
+╰─┬────⊡ ${readmore}
+╭─┴⊡「 *GUIDE* 」⊡
 ├${setv} *🅞 = For Owner* 
 ├${setv} *🅕 = For Free User*
 ├${setv} *🅟 = For Premium User*
-╰─┬────❍
-╭─┴❍「 *RANDOM VIDEO* 」❍
+╰─┬────⊡
+╭─┴⊡「 *RANDOM VIDEO* 」⊡
 │${setv} ${prefix}tiktokgirl 🅕
 │${setv} ${prefix}tiktoknukthy 🅕
 │${setv} ${prefix}tiktokkayes 🅕
@@ -21505,7 +21424,7 @@ let xmenu_oh = `
 │${setv} ${prefix}tiktokghea 🅕
 │${setv} ${prefix}tiktoksantuy 🅕
 │${setv} ${prefix}tiktokbocil 🅕
-╰──────❍`
+╰──────⊡`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -21674,12 +21593,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
            ],
           })
         })
@@ -21728,12 +21643,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
                                   ],
                 }),
                 contextInfo: {
@@ -21884,7 +21795,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -21911,22 +21822,22 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'stalkermenu': {
 let xmenu_oh = `
-╭──❍「 *GREETING* 」❍
+╭──⊡「 *GREETING* 」⊡
 ├${setv} *Hi 👋*
 ├${setv} *${m.pushName}* 
 ├${setv} *${xeonytimewisher} 🥰* 
-╰─┬────❍ ${readmore}
-╭─┴❍「 *GUIDE* 」❍
+╰─┬────⊡ ${readmore}
+╭─┴⊡「 *GUIDE* 」⊡
 ├${setv} *🅞 = For Owner* 
 ├${setv} *🅕 = For Free User*
 ├${setv} *🅟 = For Premium User*
-╰─┬────❍
-╭─┴❍「 *STALKER* 」❍
+╰─┬────⊡
+╭─┴⊡「 *STALKER* 」⊡
 │${setv} ${prefix}tiktokstalk 🅕
 │${setv} ${prefix}mlstalk 🅕
 │${setv} ${prefix}npmstalk 🅕
 │${setv} ${prefix}ghstalk 🅕
-╰──────❍`
+╰──────⊡`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -22095,12 +22006,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
            ],
           })
         })
@@ -22149,12 +22056,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
                                   ],
                 }),
                 contextInfo: {
@@ -22305,7 +22208,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -22332,17 +22235,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'aimenu': {
 let xmenu_oh = `
-╭──❍「 *GREETING* 」❍
+╭──⊡「 *GREETING* 」⊡
 ├${setv} *Hi 👋*
 ├${setv} *${m.pushName}* 
 ├${setv} *${xeonytimewisher} 🥰* 
-╰─┬────❍ ${readmore}
-╭─┴❍「 *GUIDE* 」❍
+╰─┬────⊡ ${readmore}
+╭─┴⊡「 *GUIDE* 」⊡
 ├${setv} *🅞 = For Owner* 
 ├${setv} *🅕 = For Free User*
 ├${setv} *🅟 = For Premium User*
-╰─┬────❍
-╭─┴❍「 *OPEN AI* 」❍
+╰─┬────⊡
+╭─┴⊡「 *OPEN AI* 」⊡
 │${setv} ${prefix}blackboxai 🅕
 │${setv} ${prefix}travel-assistant 🅕
 │${setv} ${prefix}guru-ai 🅕
@@ -22362,7 +22265,7 @@ let xmenu_oh = `
 │${setv} ${prefix}dalle 🅕
 │${setv} ${prefix}ai 🅕
 │${setv} ${prefix}remini 🅕
-╰──────❍`
+╰──────⊡`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -22531,12 +22434,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
            ],
           })
         })
@@ -22585,12 +22484,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
                                   ],
                 }),
                 contextInfo: {
@@ -22741,7 +22636,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -22768,17 +22663,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'gamemenu': {
 let xmenu_oh = `
-╭──❍「 *GREETING* 」❍
+╭──⊡「 *GREETING* 」⊡
 ├${setv} *Hi 👋*
 ├${setv} *${m.pushName}* 
 ├${setv} *${xeonytimewisher} 🥰* 
-╰─┬────❍ ${readmore}
-╭─┴❍「 *GUIDE* 」❍
+╰─┬────⊡ ${readmore}
+╭─┴⊡「 *GUIDE* 」⊡
 ├${setv} *🅞 = For Owner* 
 ├${setv} *🅕 = For Free User*
 ├${setv} *🅟 = For Premium User*
-╰─┬────❍
-╭─┴❍「 *GAME MENU* 」❍
+╰─┬────⊡
+╭─┴⊡「 *GAME MENU* 」⊡
 │${setv} ${prefix}truth 🅕
 │${setv} ${prefix}dare 🅕
 │${setv} ${prefix}suit 🅕
@@ -22793,7 +22688,7 @@ let xmenu_oh = `
 │${setv} ${prefix} claim 🅕
 │${setv} ${prefix} tmoney 🅕
 │${setv} ${prefix} tflimit 🅕
-╰──────❍`
+╰──────⊡`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -22962,12 +22857,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
            ],
           })
         })
@@ -23016,12 +22907,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
                                   ],
                 }),
                 contextInfo: {
@@ -23172,7 +23059,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -23199,17 +23086,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'funmenu': {
 let xmenu_oh = `
-╭──❍「 *GREETING* 」❍
+╭──⊡「 *GREETING* 」⊡
 ├${setv} *Hi 👋*
 ├${setv} *${m.pushName}* 
 ├${setv} *${xeonytimewisher} 🥰* 
-╰─┬────❍ ${readmore}
-╭─┴❍「 *GUIDE* 」❍
+╰─┬────⊡ ${readmore}
+╭─┴⊡「 *GUIDE* 」⊡
 ├${setv} *🅞 = For Owner* 
 ├${setv} *🅕 = For Free User*
 ├${setv} *🅟 = For Premium User*
-╰─┬────❍
-╭─┴❍「 *FUN MENU* 」❍
+╰─┬────⊡
+╭─┴⊡「 *FUN MENU* 」⊡
 │${setv} ${prefix}define 🅕
 │${setv} ${prefix}readmore 🅕
 │${setv} ${prefix}fact 🅕
@@ -23274,7 +23161,7 @@ let xmenu_oh = `
 │${setv} ${prefix}feed 🅕
 │${setv} ${prefix}checkme 🅕
 │${setv} ${prefix}sound1 - sound161 🅕
-╰──────❍`
+╰──────⊡`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -23443,12 +23330,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
            ],
           })
         })
@@ -23497,12 +23380,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
                                   ],
                 }),
                 contextInfo: {
@@ -23653,7 +23532,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -23680,17 +23559,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'stickermenu': {
 let xmenu_oh = `
-╭──❍「 *GREETING* 」❍
+╭──⊡「 *GREETING* 」⊡
 ├${setv} *Hi 👋*
 ├${setv} *${m.pushName}* 
 ├${setv} *${xeonytimewisher} 🥰* 
-╰─┬────❍ ${readmore}
-╭─┴❍「 *GUIDE* 」❍
+╰─┬────⊡ ${readmore}
+╭─┴⊡「 *GUIDE* 」⊡
 ├${setv} *🅞 = For Owner* 
 ├${setv} *🅕 = For Free User*
 ├${setv} *🅟 = For Premium User*
-╰─┬────❍
-╭─┴❍「 *STICKERS* 」❍
+╰─┬────⊡
+╭─┴⊡「 *STICKERS* 」⊡
 │${setv} ${prefix}goose 🅕
 │${setv} ${prefix}woof 🅕
 │${setv} ${prefix}8ball 🅕
@@ -23698,7 +23577,7 @@ let xmenu_oh = `
 │${setv} ${prefix}meow 🅕
 │${setv} ${prefix}gura 🅕
 │${setv} ${prefix}telestick 🅕
-╰──────❍`
+╰──────⊡`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -23867,12 +23746,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
            ],
           })
         })
@@ -23921,12 +23796,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
                                   ],
                 }),
                 contextInfo: {
@@ -24077,7 +23948,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -24104,17 +23975,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'animemenu': {
 let xmenu_oh = `
-╭──❍「 *GREETING* 」❍
+╭──⊡「 *GREETING* 」⊡
 ├${setv} *Hi 👋*
 ├${setv} *${m.pushName}* 
 ├${setv} *${xeonytimewisher} 🥰* 
-╰─┬────❍ ${readmore}
-╭─┴❍「 *GUIDE* 」❍
+╰─┬────⊡ ${readmore}
+╭─┴⊡「 *GUIDE* 」⊡
 ├${setv} *🅞 = For Owner* 
 ├${setv} *🅕 = For Free User*
 ├${setv} *🅟 = For Premium User*
-╰─┬────❍
-╭─┴❍「 *ANIME MENU* 」❍
+╰─┬────⊡
+╭─┴⊡「 *ANIME MENU* 」⊡
 │${setv} ${prefix}stickhandhold 🅕
 │${setv} ${prefix}stickshinobu 🅕
 │${setv} ${prefix}stickcuddle 🅕
@@ -24250,7 +24121,7 @@ let xmenu_oh = `
 │${setv} ${prefix}shinobu 🅕
 │${setv} ${prefix}fox_girl 🅕
 │${setv} ${prefix}gecg 🅕
-╰──────❍`
+╰──────⊡`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -24419,12 +24290,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
            ],
           })
         })
@@ -24473,12 +24340,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
                                   ],
                 }),
                 contextInfo: {
@@ -24629,7 +24492,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
 		      }
            ],
           }),
@@ -24656,17 +24519,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'nsfwmenu': {
 let xmenu_oh = `
-╭──❍「 *GREETING* 」❍
+╭──⊡「 *GREETING* 」⊡
 ├${setv} *Hi 👋*
 ├${setv} *${m.pushName}* 
 ├${setv} *${xeonytimewisher} 🥰* 
-╰─┬────❍ ${readmore}
-╭─┴❍「 *GUIDE* 」❍
+╰─┬────⊡ ${readmore}
+╭─┴⊡「 *GUIDE* 」⊡
 ├${setv} *🅞 = For Owner* 
 ├${setv} *🅕 = For Free User*
 ├${setv} *🅟 = For Premium User*
-╰─┬────❍
-╭─┴❍「 *ANIME NSFW* 」❍
+╰─┬────⊡
+╭─┴⊡「 *ANIME NSFW* 」⊡
 │${setv} ${prefix}hentai 🅕
 │${setv} ${prefix}gifblowjob 🅕
 │${setv} ${prefix}hentaivid 🅕
@@ -24681,7 +24544,7 @@ let xmenu_oh = `
 │${setv} ${prefix}pussy 🅕
 │${setv} ${prefix}yuri 🅕
 │${setv} ${prefix}zettai 🅕
-╰──────❍`
+╰──────⊡`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -24850,12 +24713,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-			    }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
            ],
           })
         })
@@ -24904,12 +24763,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-		      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
                                   ],
                 }),
                 contextInfo: {
@@ -25060,7 +24915,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -25087,17 +24942,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'databasemenu': {
 let xmenu_oh = `
-╭──❍「 *GREETING* 」❍
+╭──⊡「 *GREETING* 」⊡
 ├${setv} *Hi 👋*
 ├${setv} *${m.pushName}* 
 ├${setv} *${xeonytimewisher} 🥰* 
-╰─┬────❍ ${readmore}
-╭─┴❍「 *GUIDE* 」❍
+╰─┬────⊡ ${readmore}
+╭─┴⊡「 *GUIDE* 」⊡
 ├${setv} *🅞 = For Owner* 
 ├${setv} *🅕 = For Free User*
 ├${setv} *🅟 = For Premium User*
-╰─┬────❍
-╭─┴❍「 *DATABASE* 」❍
+╰─┬────⊡
+╭─┴⊡「 *DATABASE* 」⊡
 │${setv} ${prefix}setcmd 🅞
 │${setv} ${prefix}delcmd 🅞
 │${setv} ${prefix}listcmd 🅕
@@ -25106,7 +24961,7 @@ let xmenu_oh = `
 │${setv} ${prefix}delmsg 🅞
 │${setv} ${prefix}getmsg 🅕
 │${setv} ${prefix}listmsg 🅕
-╰──────❍`
+╰──────⊡`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -25275,12 +25130,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
            ],
           })
         })
@@ -25329,12 +25180,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
                                   ],
                 }),
                 contextInfo: {
@@ -25485,7 +25332,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -25512,23 +25359,23 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'storemenu': {
 let xmenu_oh = `
-╭──❍「 *GREETING* 」❍
+╭──⊡「 *GREETING* 」⊡
 ├${setv} *Hi 👋*
 ├${setv} *${m.pushName}* 
 ├${setv} *${xeonytimewisher} 🥰* 
-╰─┬────❍ ${readmore}
-╭─┴❍「 *GUIDE* 」❍
+╰─┬────⊡ ${readmore}
+╭─┴⊡「 *GUIDE* 」⊡
 ├${setv} *🅞 = For Owner* 
 ├${setv} *🅕 = For Free User*
 ├${setv} *🅟 = For Premium User*
-╰─┬────❍
-╭─┴❍「 *STORE 🛍️* 」❍
+╰─┬────⊡
+╭─┴⊡「 *STORE 🛍️* 」⊡
 │${setv} ${prefix}list 🅕
 │${setv} ${prefix}store 🅕
 │${setv} ${prefix}shop 🅕
 │${setv} ${prefix}addlist 🅞
 │${setv} ${prefix}dellist 🅞
-╰──────❍`
+╰──────⊡`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -25697,7 +25544,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
   "name": "quick_reply",
@@ -25751,12 +25598,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
                                   ],
                 }),
                 contextInfo: {
@@ -25907,7 +25750,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -25934,21 +25777,21 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'religionmenu': {
 let xmenu_oh = `
-╭──❍「 *GREETING* 」❍
+╭──⊡「 *GREETING* 」⊡
 ├${setv} *Hi 👋*
 ├${setv} *${m.pushName}* 
 ├${setv} *${xeonytimewisher} 🥰* 
-╰─┬────❍ ${readmore}
-╭─┴❍「 *GUIDE* 」❍
+╰─┬────⊡ ${readmore}
+╭─┴⊡「 *GUIDE* 」⊡
 ├${setv} *🅞 = For Owner* 
 ├${setv} *🅕 = For Free User*
 ├${setv} *🅟 = For Premium User*
-╰─┬────❍
-╭─┴❍「 *RELIGION* 」❍
+╰─┬────⊡
+╭─┴⊡「 *RELIGION* 」⊡
 │${setv} ${prefix}bible 🅕
 │${setv} ${prefix}quran 🅕
 │${setv} ${prefix}gita 🅕
-╰──────❍`
+╰──────⊡`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -26117,12 +25960,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      } 
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              } 
            ],
           })
         })
@@ -26171,12 +26010,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
                                   ],
                 }),
                 contextInfo: {
@@ -26327,7 +26162,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -26354,17 +26189,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'bugmenu': {
 let xmenu_oh = `
-╭──❍「 *GREETING* 」❍
+╭──⊡「 *GREETING* 」⊡
 ├${setv} *Hi 👋*
 ├${setv} *${m.pushName}* 
 ├${setv} *${xeonytimewisher} 🥰* 
-╰─┬────❍ ${readmore}
-╭─┴❍「 *GUIDE* 」❍
+╰─┬────⊡ ${readmore}
+╭─┴⊡「 *GUIDE* 」⊡
 ├${setv} *🅞 = For Owner* 
 ├${setv} *🅕 = For Free User*
 ├${setv} *🅟 = For Premium User*
-╰─┬────❍
-╭─┴❍「 *BUG & WAR* 」❍
+╰─┬────⊡
+╭─┴⊡「 *BUG & WAR* 」⊡
 │${setv} ${prefix}xandroid 🅞
 │${setv} ${prefix}xandroid2 🅞
 │${setv} ${prefix}xios 🅞
@@ -26374,7 +26209,7 @@ let xmenu_oh = `
 │${setv} ${prefix}🙂 🅞
 │${setv} ${prefix}ioskill 🅞
 │${setv} ${prefix}onekill 🅞
-╰──────❍`
+╰──────⊡`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -26543,12 +26378,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
            ],
           })
         })
@@ -26597,12 +26428,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-			}
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
                                   ],
                 }),
                 contextInfo: {
@@ -26753,7 +26580,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),
@@ -26780,17 +26607,17 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 break
 case 'othermenu': {
 let xmenu_oh = `
-╭──❍「 *GREETING* 」❍
+╭──⊡「 *GREETING* 」⊡
 ├${setv} *Hi 👋*
 ├${setv} *${m.pushName}* 
 ├${setv} *${xeonytimewisher} 🥰* 
-╰─┬────❍ ${readmore}
-╭─┴❍「 *GUIDE* 」❍
+╰─┬────⊡ ${readmore}
+╭─┴⊡「 *GUIDE* 」⊡
 ├${setv} *🅞 = For Owner* 
 ├${setv} *🅕 = For Free User*
 ├${setv} *🅟 = For Premium User*
-╰─┬────❍
-╭─┴❍「 *OTHER MENU* 」❍
+╰─┬────⊡
+╭─┴⊡「 *OTHER MENU* 」⊡
 │${setv} ${prefix}update 🅕
 │${setv} ${prefix}ping 🅕
 │${setv} ${prefix}menu 🅕
@@ -26807,7 +26634,7 @@ let xmenu_oh = `
 │${setv} ${prefix}q 🅕
 │${setv} ${prefix}inspect 🅕
 │${setv} ${prefix}tagme 🅕
-╰──────❍`
+╰──────⊡`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -26976,12 +26803,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
            ],
           })
         })
@@ -27030,12 +26853,8 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-  "name": "quick_reply",
-  "buttonParamsJson": `{"display_text":"ALL MENU 🗂️","id":"${prefix}allmenu"}`
-	      }
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 💌\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
+              }
                                   ],
                 }),
                 contextInfo: {
@@ -27186,7 +27005,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp 📱\",\"url\":\"https://chat.whatsapp.com/CodjsOI43Ek2PXdQOC1iZK\",\"merchant_url\":\"https://www.google.com\"}"
 	      }
            ],
           }),

@@ -120,8 +120,8 @@ async function GroupParticipantsUpdate(XeonBotInc, { id, participants, action })
                 XeonLft = await getBuffer(profile)
 				if (action == 'add') {
 				let xeonName = n
-                const xdate = moment.tz('Asia/Kolkata').locale('en-IN').format('DD/MM/YYYY');
-                const xtime = moment().tz('Asia/Kolkata').locale('en-IN').format('HH:mm:ss');
+                const xdate = moment.tz('Asia/Karachi').locale('en-PK').format('DD/MM/YYYY');
+                const xtime = moment().tz('Asia/Karachi').locale('en-PK').format('HH:mm:ss');
 	            const xmembers = metadata.participants.length
                 xeonbody = `┌─❖
 │「 𝗛𝗶  」
@@ -174,8 +174,8 @@ let msgs = generateWAMessageFromContent(id, {
 await XeonBotInc.relayMessage(id, msgs.message, {})
 				} else if (action == 'remove') {
 				let xeonName = n
-                const xeondate = moment.tz('Asia/Kolkata').locale('en-IN').format('DD/MM/YYYY');
-                const xeontime = moment().tz('Asia/Kolkata').locale('en-IN').format('HH:mm:ss');
+                const xeondate = moment.tz('Asia/Karachi').locale('en-PK').format('DD/MM/YYYY');
+                const xeontime = moment().tz('Asia/Karachi').locale('en-PK').format('HH:mm:ss');
 	            const xeonmembers = metadata.participants.length
 					xeonbody = `┌─❖
 │「 𝗚𝗼𝗼𝗱𝗯𝘆𝗲  」
@@ -227,8 +227,8 @@ let msgs = generateWAMessageFromContent(id, {
 }, {})
 await XeonBotInc.relayMessage(id, msgs.message, {})
 				} else if (action == 'promote') {
-const xeontime = moment().tz('Asia/Kolkata').locale('en-IN').format('HH:mm:ss');
-const xeondate = moment.tz('Asia/Kolkata').locale('en-IN').format('DD/MM/YYYY');
+const xeontime = moment().tz('Asia/Karachi').locale('en-PK').format('HH:mm:ss');
+const xeondate = moment.tz('Asia/Karachi').locale('en-PK').format('DD/MM/YYYY');
 let xeonName = n
 xeonbody = ` 𝗖𝗼𝗻𝗴𝗿𝗮𝘁🎉 @${xeonName.split("@")[0]}, you have been *promoted* to *admin* 🥳`
    await XeonBotInc.sendMessage(id,
@@ -244,8 +244,8 @@ xeonbody = ` 𝗖𝗼𝗻𝗴𝗿𝗮𝘁🎉 @${xeonName.split("@")[0]}, you ha
 "thumbnail": XeonWlcm,
 "sourceUrl": `${wagc}`}}})
 				} else if (action == 'demote') {
-const xeontime = moment().tz('Asia/Kolkata').locale('en-IN').format('HH:mm:ss');
-const xeondate = moment.tz('Asia/Kolkata').locale('en-IN').format('DD/MM/YYYY');
+const xeontime = moment().tz('Asia/Karachi').locale('en-PK').format('HH:mm:ss');
+const xeondate = moment.tz('Asia/Karachi').locale('en-PK').format('DD/MM/YYYY');
 let xeonName = n
 xeonbody = `𝗢𝗼𝗽𝘀‼️ @${xeonName.split("@")[0]}, you have been *demoted* from *admin* 😬`
 await XeonBotInc.sendMessage(id,
@@ -277,7 +277,7 @@ async function MessagesUpsert(XeonBotInc, message, store) {
 		if (msg.key.id.length === 22) return
 		if (!msg.message) return
 		const m = await Serialize(XeonBotInc, msg, store)
-		require('../XeonCheems15')(XeonBotInc, m, message, store);
+		require('../GlobalMD')(XeonBotInc, m, message, store);
 		if (type === 'interactiveResponseMessage' && m.quoted && m.quoted.fromMe) {
 			let apb = await generateWAMessage(m.chat, { text: JSON.parse(m.msg.nativeFlowResponseMessage.paramsJson).id, mentions: m.mentionedJid }, {
 				userJid: XeonBotInc.user.id,
