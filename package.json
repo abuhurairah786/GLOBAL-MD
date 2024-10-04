@@ -1,5 +1,5 @@
 {
-  "name": "GLOBAL-MD",
+  "name": "🅗🅤🅡🅐🅘🅡🅐🅗-🅜🅓",
   "version": "2.0.0",
   "description": "Bot WhatsApp Using Lib Baileys Multi Device",
   "main": "start.js",
@@ -8,9 +8,9 @@
     "start": "node start.js"
   },
   "keywords": [
-    "Whatsapp Bot By GlobalTechInfo"
+    "Whatsapp Bot By ABUHURAIRAH"
   ],
-  "author": "GlobalTechInfo",
+  "author": "ABUHURAIRAH",
   "license": "MIT",
   "dependencies": {
     "@whiskeysockets/baileys" : "latest",
