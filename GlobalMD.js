@@ -1,6 +1,6 @@
-//YouTube: @GlobalTechInfo
-//GitHub: @GlobalTechInfo
-//subscribe to my youtube channel: https://youtube.com/@GlobalTechInfo
+//YouTube: @HURAIRAH
+//GitHub: @HURAIRAH
+//subscribe to my youtube channel: https://youtube.com/@HURAIRAH
 
 process.on('unhandledRejection', console.error)
 process.on('uncaughtException', console.error)
