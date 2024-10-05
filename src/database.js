@@ -1,5 +1,3 @@
-//subscribe to my youtube channel: https://youtube.com/@GlobalTechInfo
-// WHATSAPP CHANNEL: https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07
 require('../settings');
 const fs = require('fs');
 const path = require('path');
